@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(26, 236, 201);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.card {
+    text-align: center;
+    font-size: 2vw;
+    width: 25vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.weather-icon img {
+    width: 100%;
+    max-height: 40vh; /* Set maximum height for responsive scaling */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.temperature {
+    color: black;
+    font-size: 3vw;
+}
+
+.city {
+    color: sienna;
+    font-size: 2vw;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 80vw;
+        height: 60vh;
+        font-size: 4vw;
+    }
+
+    .weather-icon img {
+        max-height: 30vh;
+    }
+
+    .temperature {
+        font-size: 6vw;
+    }
+
+    .city {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .card {
+        width: 50vw;
+        height: 60vh;
+        font-size: 3vw;
+    }
+
+    .weather-icon img {
+        max-height: 30vh;
+    }
+
+    .temperature {
+        font-size: 4vw;
+    }
+
+    .city {
+        font-size: 3vw;
+    }
+}
